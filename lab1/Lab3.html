@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<title> Янушевич Максим ПИ-322</title>
+
+<script language="JavaScript">
+
+let name = window.prompt('Введите своё имя', 'Введите имя');
+document.write('Ваше имя - ' + name + '?');
+
+function setName() {
+if (confirm('Не надоело?')) {
+  window.location.reload();
+}
+else { alert('Ну и правильно!');}
+}
+</script>
+
+<br><input type="button" onclick="setName()" value="Еще раз"/>
