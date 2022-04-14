@@ -14,6 +14,7 @@
   <li><a href="lab1/Lab1.html">Задание 1</a></li>
   <li><a href="lab1/Lab2.html">Задание 2</a></li>
   <li><a href="lab1/Lab3.html">Задание 3</a></li>
+  <li><a href="lab1/Lab4.html">Задание 4</a></li>
 </ul>
 
 

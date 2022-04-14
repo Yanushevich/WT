@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<head>
+<title>if</title>
+</head>
+<body>
+<script language="JavaScript" type="text/JavaScript">
+
+var pass;
+var word = "123qwe";
+pass=(prompt("Введите пароль (123qwe)",''));
+if(pass==word) {
+alert ('Пароль правильный'); 
+} else { alert ('Пароль неверный, но я вас пропущу'); }
+
+var x, y;
+x=parseInt(prompt("Введите значение х",'')); 
+y=parseInt(prompt("Введите значение у",'')); 
+if(x<y)
+{
+alert("Максимальное число - y");
+}
+else if (x>y)
+{
+alert("Максимальное число - x");
+}
+else if (x==y) { alert("Введенные числа равны"); }
+else { alert("Ошибка ввода"); }
+
+</script>
+<br><input type="button" onclick="history.back();" value="На главную"/>
+<br><input type="button" onclick="location.reload();" value="Еще раз"/>
+</body>
+</html> 
