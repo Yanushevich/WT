@@ -1,0 +1,39 @@
+<title>
+Янушевич Максим ПИ-322
+</title>
+<style>
+.drag{
+  position: relative;
+  display: table-cell;
+  height: 150px;
+  width: 150px;
+  border: 1px solid #000;
+  text-align: center;
+  vertical-align: middle;
+}
+</style>
+</head>
+<body>
+<script src="/lib/jquery-3.6.0.min.js"></script>
+
+<div id="box" class="drag">
+Квадрат
+</div>
+
+<script>
+var move = 0;
+$(document).ready(function(){
+  $("#box").mousedown(function(){
+    move = 1;
+    $("#box").mousemove(function(e){
+      if (move == 1){
+        $("#box").animate({top:e.pageY-50,left:e.pageX-50},0);
+      }
+    }); 
+  });
+  $(document).mouseup(function(){move=0;});	
+});
+</script>
+<input type="button" value="Назад" onclick="history.back();"></input>
+</body>
+</html>
