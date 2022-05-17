@@ -1,0 +1,30 @@
+<title>
+Янушевич Максим ПИ-322
+</title>
+<body>
+<br>Управление стрелочками 
+<input type="button" value="Назад" onclick="history.back();"></input>
+<br> 
+<img id="frog" src="/img/1.jpg" style="position:relative"><br>
+<script src="/lib/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(document).keyup(function(k){
+    if (k.key=="ArrowUp" || k.keyCode==38){
+      $("#frog").animate({top:"-=100"},200);
+    }
+    if (k.key=="ArrowDown" || k.keyCode==40){
+      $("#frog").animate({top:"+=100"},200);
+    }
+    if (k.key=="ArrowLeft" || k.keyCode==37){
+      $("#frog").animate({right:"+=100"},200);
+    }
+    if (k.key=="ArrowRight" || k.keyCode==39){
+      $("#frog").animate({right:"-=100"},200);
+    }
+  });
+});
+</script>
+
+</body>
+</html>
