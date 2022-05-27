@@ -1,0 +1,425 @@
+<html>
+<head>
+<title>
+Выбери персонажа
+</title>
+</head>
+<style>
+body{
+	background-image: url("https://krot.info/uploads/posts/2020-10/1603844856_16-p-fon-dota-2-25.jpg");
+	background-size: cover;
+}
+.FirstForm{
+	width: 50%;
+	margin: 1% 25% 0%;
+	position: relative;
+}
+@media (max-width:1000px){
+	.FirstForm{
+		width: 90%;
+		margin: 3% 4% 5%;
+		position: relative;
+	}
+}
+.SecondForm{
+	width: 50%;
+	margin: 1% 25% 5%;
+	position: sticky;
+	bottom: 0px;
+}
+.poster{
+	width:28%;
+	float:left;
+	height:300;
+	overflow: visible;
+}
+.imag{
+	width:72%;
+	float:right;
+}
+.about{
+	display: inline-block;
+	width:72%;
+}
+.bt{
+	position: relative;
+	margin: 3% 0%;
+	height: 50px;
+    width: 180;
+}
+h2{
+	margin: 0;
+	position:relative;
+	top:-15;
+}
+.select{
+	margin:10 50 30;
+}
+label {
+	font-size:14;
+}
+input {
+	font-size:17;
+}
+span {
+	font-size:17;
+}
+img {
+	cursor: zoom-in;
+}
+</style>
+<!--Подключение библиотек-->
+<!--FancyZoom-->
+<link rel="stylesheet" href="../../lib/jquery.fancyzoom-1.0.2/css/fancyzoom.css">
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>var FancyZ = jQuery.noConflict();</script><!--Для использования другой версии jQuery-->
+<script src="../../lib/jquery.fancyzoom-1.0.2/js/jquery.fancyzoom.min.js"></script>
+<!--jCarousel-->
+<script type="text/javascript" src="../../lib/jcarousel-0.3.9/dist/jquery.jcarousel.min.js"></script>
+<link rel="stylesheet" type="text/css" href="jcarousel.css" /> 
+<!--jQuery-UI-->
+<link rel="stylesheet" href="../../lib/jquery-ui-1.13.1.custom/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../../lib/jquery-ui-1.13.1.custom/jquery-ui.js"></script> 
+<script type="text/javascript" src="../../lib/datepicker-ru.js"></script><!--Локализация календаря-->
+<!--Подключили-->
+<body>
+<!--Первая форма-->
+<div class="FirstForm" id="tabs">
+	<!--Верхние вкладки-->
+	<ul>
+		<li><a id="a1" href="#tabs-1">Сила</a></li>
+		<li><a id="a2" href="#tabs-2">Ловкость</a></li>
+		<li><a id="a3" href="#tabs-3">Интеллект</a></li>
+    </ul>
+	<!--Первая вкладка-->
+  <div id="tabs-1" style="padding: 2em 0.1em;" aria-hidden="false">
+	<div class="poster">
+		<a href="str2.png" class="fancy"><img src="str.png"></a>
+		<input type="button" class="bt" id="bt1" value="Создать">
+	</div>
+	<!--Images-->
+	<div class="imag">
+	<!--Title-->
+	<h2>Герои с основным атрибутом "Сила"</h2>
+	<!-- Wrapper -->
+	<div class="jcarousel-wrapper" id="jw1">
+		<!-- Carousel -->
+		<div class="jcarousel" id="jca1">
+		<ul>
+			<li><a href="pudge_b.jpg" class="fancy"><img src="pudge_a.jpg"></a></li>
+			<li><a href="axe_b.jpg" class="fancy"><img src="axe_a.jpg"></a></li>
+			<li><a href="io_b.jpg" class="fancy"><img src="io_a.jpg"></a></li>
+		</ul>
+		</div>
+	</div>	
+	<!-- Controls -->
+	<p class="jcarousel-pagination"></p>	
+	</div>
+	<!--Text-->
+	<div>
+		<p class="about">Герои силы имеют тенденцию обладать количеством здоровья и регенерацией здоровья больше чем у других героев, что делает их более стойкими к физическим атакам и заклинаниям. Герои силы имеют большое разнообразие в ролях, включая такие как керри, инициация и поддержка, но почти все из них имеют склонность к инициации и должны выступать в роли танков. Герои с большим количеством силы могут значительно увеличить общую живучесть команды. За несколькими исключениями, большинство героев силы имеют ближний тип атаки. Хотя герои интеллекта в основном сильны в ранней игре, а герои ловкости превосходят в поздней игре, герои силы чаще всего сбалансированы между этими временными промежутками и остаются уместными на всех этапах
+<br> - Pudge (1) притягивает к себе героев, съедая туши врагов
+<br> - Axe (2) заставляет соперников бить бронированного себя, размахивая топором
+<br> - Io (3) восстанавливает здоровье союзникам, вывозя их из передряги
+</p>
+	</div>
+  </div>
+  <!--Вторая вкладка-->
+  <div id="tabs-2" style="padding: 2em 0.1em;" >
+	<div class="poster">
+		<a href="agi2.png" class="fancy"><img src="agi.png"></a>
+		<input type="button" class="bt" id="bt2" value="Создать">
+	</div>
+    <!--Images-->
+	<div class="imag">
+	<!--Title-->
+	<h2>Герои с основным атрибутом "Ловкость"</h2>
+	<!-- Wrapper -->
+	<div class="jcarousel-wrapper" id="jw2">
+		<!-- Carousel -->
+		<div class="jcarousel" id="jca2">
+		<ul>
+			<li><a href="sniper_b.jpg" class="fancy"><img src="sniper_a.jpg"></a></li>
+			<li><a href="morph_b.jpg" class="fancy"><img src="morph_a.jpg"></a></li>
+			<li><a href="drow_b.jpg" class="fancy"><img src="drow_a.jpg"></a></li>
+		</ul>
+		</div>
+	</div>	
+	<!-- Controls -->
+	<p class="jcarousel-pagination"></p>	
+	</div>
+	<!--Text-->
+	<div>
+		<p class="about">Из-за того что герои ловкости являются единственным типом героев которые получают и урон и скорость атаки с увеличением основного атрибута, они имеют тенденцию обладать наивысшим исходным физическим уроном в процессе игры. Это позволяет им неплохо усиливаться с необходимыми предметами. Они, как правило, имеют ограниченные возможности контроля или быстрого урона; почти все их способности увеличивают их физические возможности или служат механизмами для позиционирования или побега. Это, как правило, делает их более уязвимыми и слабыми в ранней стадии игры, когда сильный контроль и быстрый урон позволяют совершать убийства, но это также значит что с хорошими предметами в инвентаре, они будут единственными кто наносит наибольшее количество урона в поздней игре, также они получают меньшее количество физического урона, так как у них высокий показатель брони. Герои ловкости имеют примерно равное распределение между ближним и дальним типом боя, и также в основном выступают в роли Керри
+<br> - Sniper (1) точно целится и издалека расстреливает врагов из своей пушки
+<br> - Morphling (2) балансирует между ловкостью и силой, а также превращается в героев, находящихся рядом
+<br> - Drow Ranger (3) зачаровывает стрелы льдом, замедляя врагов и пробивая их броню
+</p>
+	</div>
+  </div>
+  <!--Третья вкладка-->
+  <div id="tabs-3" style="padding: 2em 0.1em;" >
+	<div class="poster">
+		<a href="int2.png" class="fancy"><img src="int.png"></a>
+		<input type="button" class="bt" id="bt3" value="Купить">
+	</div>
+    <!--Images-->
+	<div class="imag">
+	<!--Title-->
+	<h2>Герои с основным атрибутом "Интеллект"</h2>
+	<!-- Wrapper -->
+	<div class="jcarousel-wrapper" id="jw3">
+		<!-- Carousel -->
+		<div class="jcarousel" id="jca3">
+		<ul>
+			<li><a href="vs_b.jpg" class="fancy"><img src="vs_a.jpg"></a></li>
+			<li><a href="inv_b.jpg" class="fancy"><img src="inv_a.jpg"></a></li>
+			<li><a href="lina_b.jpg" class="fancy"><img src="lina_a.jpg"></a></li>
+		</ul>
+		</div>
+	</div>	
+	<!-- Controls -->
+	<p class="jcarousel-pagination"></p>	
+	</div>
+	<!--Text-->
+	<div>
+		<p class="about">По сравнению с остальными героями, герои интеллекта имеют большее количество активных способностей: как минимум по три, иногда по четыре, и реже всего — по пять. Больший запас маны и более высокая регенерация маны позволяют использовать героям свои способности чаще. В целом, герои интеллекта имеют самое большое количество способностей контроля, что делает их очень важными в команде. Предметы, которые собирают герои, как правило, основаны на заклинаниях, поэтому значительно повышают уровень интеллекта. За некоторыми исключениями, герои интеллекта имеют дальний тип боя. Так как у большинства героев интеллекта малый прирост силы на уровень, они обычно полагаются на заклинания, а так же на предметы, повышающие урон от способностей. Герои интеллекта обычно реализовываются в начале и в середине игры, пока их заклинания наносят наибольший урон по отношению к здоровью противника, к концу их сила снижается. Однако, некоторые герои могут оставаться очень сильными и к концу игры. По этой причине, герои интеллекта — отлично подходят на роль поддержки или быстрого урона
+<br> - Void Spirit (1) неожиданно врывается в схватку, взрывая врагов силой пустоты
+<br> - Invoker (2) комбинирует 3 сферы, вызывая одно из десяти своих мощных заклинаний
+<br> - Lina (3) обжигает врагов горячей магией и огненными ударами
+</p>
+	</div>
+  </div>
+</div>
+<!--Вторая форма-->
+<div class="SecondForm">
+	<div id="dialog" title="Создание персонажа">
+		<p></p>
+		<label for ="init" style="margin:0 5 10 20;">Имя:</label>
+		<input type="text" size="30" id="init"><br><br>
+		<label for ="kol" style="margin:0 5 10 20;">Количество способностей:</label>
+		<input type="number" value="2" step="1" min="2" max="5" id="kol">
+		<div id="slider" style="margin:10 50 30;"></div>
+		<label for ="data" style="margin:0 5 10 20;">Дата создания:</label>
+		<input id="data" readonly><br><br>
+		<label for ="select" style="margin:0 5 10 20;">Основной атрибут:</label>
+		<select id="select" >
+			<option>Сила</option>
+			<option>Ловкость</option>
+			<option>Интеллект</option>
+		</select>
+		<br><label for ="search" style="margin:0 5 10 20;">Краткое описание:</label>
+		<textarea style="margin:20 0 0 0;" id="search"> </textarea>
+		<br>
+		<input type="button" id="send" value="Отправить" style="position:relative;width: 22%;	margin: 3% 40% 2%;height:30;">
+	</div>
+	<div id="confirm" title="Подтверждение">
+		<p>Подтвердите создание</p>
+	</div>
+	<div id="alert" title="Персонаж отправлен модераторам">
+		<p>Спасибо за заполнение "анкеты".</p>
+	</div>
+</div>
+<script>
+(function($){ //Запуск FancyZoom
+	$("a.fancy").fancyZoom();
+})(FancyZ); 
+</script>
+</body>
+<script>
+jQuery.preloadImages = function(){ // Подгрузка изображений в буфер
+	for(var i = 0; i < arguments.length; i++)
+	{
+		jQuery("<img>").attr("src", arguments[ i ]);
+	}
+};
+$.preloadImages("axe_a.jpg","axe_b.jpg","drow_a.jpg","drow_b.jpg","inv_a.jpg","inv_b.jpg","io_a.jpg","io_b.jpg","lina_a.jpg","lina_b.jpg",
+"morph_a.jpg","morph_b.jpg","pudge_a.jpg","pudge_b.jpg","sniper_a.jpg","sniper_b.jpg","vs_a.jpg","vs_b.jpg");// Путь к изображениям
+$("#a1,#a2,#a3").click(function(){ //При нажатии на вкладку
+	var jcIdForAS = $(this)[0].id;
+	(function($){ //Останавливается автоскроллинг
+		$('.jcarousel').jcarouselAutoscroll('stop');
+	})(FancyZ);
+	(function($){ //Запускается автоскроллинг выбранной вкладки
+		$('#jc'+jcIdForAS).jcarouselAutoscroll('start');
+	})(FancyZ);
+	setTimeout(function() {(function($){ // paging
+		$('#pjw'+jcIdForAS.substring(1,2)).animate({top:$(".about:eq("+(jcIdForAS.substring(1,2)-1)+")").position()['top'] - $(".jcarousel-wrapper:eq("+(jcIdForAS.substring(1,2)-1)+")").position()['top']},0);
+	})(FancyZ);},0);
+});
+$(window).load(function(){
+	(function($){ // Основной код, в котором требуется другая версия jQuery
+		$('.jcarousel').on('jcarousel:create', function(event, carousel) { // Установка размеров блока при создании jcarousel
+			var jwid = this.parentElement.id;
+			let clH = this.clientHeight;
+			let clW = this.clientWidth;
+			$("#"+jwid).animate({height:maxHeightOfImage(parseInt(jwid.substring(2,3))),width:maxWidthOfImage(parseInt(jwid.substring(2,3)))},0);
+			setTimeout(function() {
+				$('#p'+jwid).animate({top:clH},{duration:0});
+			},0);
+			if (($(".poster img:eq("+(jwid.substring(2,3)-1)+")")[0].clientHeight + 50)<(clH+$(".about:eq("+(jwid.substring(2,3)-1)+")")[0].clientHeight)){
+				$(".poster:eq("+(jwid.substring(2,3)-1)+")").animate({height:clH+$(".about:eq("+(jwid.substring(2,3)-1)+")")[0].clientHeight+50},400);}
+			else{$(".poster:eq("+(jwid.substring(2,3)-1)+")").animate({height:($(".poster img:eq("+(jwid.substring(2,3)-1)+")")[0].clientHeight + 100)},400);}
+		});
+		$('.jcarousel').on('jcarousel:visiblein', 'li', function(event, carousel) { // Установка размеров блока, когда изображение становится видимым
+			var hid = this.parentElement.parentElement.parentElement.parentElement.parentElement.getAttribute("aria-hidden");
+			var jwid = this.parentElement.parentElement.parentElement.id;
+			if ((hid!="true") && (!!hid)){	// Если атрибут вкладки "видимый" и этот атрибут существует
+				let clH = this.clientHeight;
+				let clW = this.clientWidth;
+				$("#"+jwid).animate({height:clH,width:clW},{duration:400, start:function(){
+					$('#p'+jwid).animate({top:clH},{duration:400, start:function(){
+						if (($(".poster img:eq("+(jwid.substring(2,3)-1)+")")[0].clientHeight + 50)<(clH+$(".about:eq("+(jwid.substring(2,3)-1)+")")[0].clientHeight)){
+						$(".poster:eq("+(jwid.substring(2,3)-1)+")").animate({height:clH+$(".about:eq("+(jwid.substring(2,3)-1)+")")[0].clientHeight},400);}
+					}});}});
+			}
+		});
+		$('.jcarousel').jcarousel({wrap: 'circular'}); // Карусель будет циклична
+		$('.jcarousel-pagination').jcarouselPagination({ // Создание кнопок для выбора изображения
+			item: function itemfun(page, carouselItems) {
+				$('.jcarousel-pagination')[this['_carousel'][0].parentElement.id.substring(2,3)-1].id= 'p'+this['_carousel'][0].parentElement.id;
+				let pjwid = $('.jcarousel-pagination')[this['_carousel'][0].parentElement.id.substring(2,3)-1].id;
+				$('#'+pjwid).animate({top:$(".jcarousel-wrapper:eq("+(pjwid.substring(3,4)-1)+")").position()['top']},0);
+				if (page==1){return '<a href="#' +this['_carousel'][0].parentElement.id+page + '"class="active">' + page + '</a>';} // Установка кнопки "нажатой", если изображение - первое
+				return '<a href="#' +this['_carousel'][0].parentElement.id+page +'">' + page + '</a>';
+		  }
+		});
+		$('.jcarousel').jcarouselAutoscroll({ // Настройки автоскролла изображений
+		  interval: 3000,
+		  target: '+=1',
+		  autostart: false,
+		  auto: 2
+		});
+		$('#jca1').jcarouselAutoscroll('start'); // Запуск автоскролла на первой вкладке
+		$('.jcarousel-pagination').on('jcarouselpagination:active', 'a', function() { // При становлении кнопки "нажатой"
+			let elem = $(this)[0].parentElement.parentElement.parentElement;
+			if (elem.getAttribute("aria-hidden")=="false"){
+				$(this).addClass('active');
+			}
+		});
+		$('.jcarousel-pagination').on('jcarouselpagination:inactive', 'a', function() { // При становлении кнопки "отжатой"
+			let elem = $(this)[0].parentElement.parentElement.parentElement;
+			if (elem.getAttribute("aria-hidden")=="false"){
+				$(this).removeClass('active');
+			}
+		});
+	})(FancyZ); 
+	$(function(){ // Отображение панели вкладок
+		$("#tabs").tabs();
+	});
+	function maxHeightOfImage(id){
+		let h = 0;
+		let im = $("div #jca"+id+" ul li img");
+		for (let i = 0; i<im.length;i++){ if (im[i].clientHeight>h){h = im[i].clientHeight;}}
+		$(".jcarousel-pagination")[id-1].style.margin = 0;
+		$(".jcarousel-pagination")[id-1].style.left = $(".jcarousel-wrapper").position()['left']-30;
+		return h;
+	}
+	function maxWidthOfImage(id){
+		let w = 0;
+		let im = $("div #jca"+id+" ul li img");
+		for (let i = 0; i<im.length;i++){ if (im[i].clientWidth>w){w = im[i].clientWidth;}}
+		return w;
+	}
+});
+$(".poster").ready(function(){ // Установка расположение постера и кнопки
+	let posIm = $(".poster img");
+	let pos = $(".poster");
+	let bt = $(".bt");
+	setTimeout(function() {
+		for (let i = 0;i<posIm.length;i++){
+			posIm[i].style.position = "relative";
+			let p = (1-(posIm[i].clientWidth/pos[i].clientWidth))/2;
+			posIm[i].style.left = p*100+"%";
+			bt[i].style.left = p*100+"%";
+		}
+	},0);
+});
+$(function(){
+	var prom = 1;
+	
+	$('#dialog').dialog({
+		autoOpen: false,
+		minWidth: 500,
+		minHeight: 300,
+		close: function( event, ui ) {clear();},
+		hide: { effect: "fade", duration: 200 },
+		show: { effect: "fade", duration: 200 } 
+	});
+	$('#confirm').dialog({
+		autoOpen: false,
+		hide: { effect: "fade", duration: 200 },
+		show: { effect: "fade", duration: 200 },
+		buttons: [{text: "Подтверждаю", click: function() {$('#alert').dialog('open');}},
+                  {text: "Назад", click: function() {$(this).dialog("close")}}]		
+	});
+	$('#alert').dialog({
+		autoOpen: false,
+		hide: { effect: "fade", duration: 200 },
+		show: { effect: "fade", duration: 200 },
+		buttons: [{text: "Ок", click: function() {$('#alert').dialog('close');$('#confirm').dialog('close');$('#dialog').dialog('close');}}]
+	});
+	$(".bt").click(function(){ // Нажатие на кнопку
+		for (let i = 1;i<=3;i++){
+			let ahid = $("#tabs-"+i)[0].getAttribute("aria-hidden");
+			if ((ahid!="true") && (!!ahid)){	// Если атрибут вкладки "видимый" и этот атрибут существует
+				$("#sendEl").text($("h2:eq("+(i-1)+")").text());
+			
+
+			}
+		}
+		$('#dialog').dialog('open');
+	});
+	$(".poster").ready(function(){ 
+		setTimeout(function() {
+			for (let i = 0; i<3; i++){
+				$("div .poster input")[i].style.width = $("div .poster img")[i].clientWidth;
+			}
+		},0);
+	});
+
+	$('#slider').slider({
+		animate: 'fast',
+		min: 2,
+		max: 5,
+		value: 2,
+		slide: function( event, ui ) {
+			$('#kol').val(ui['value']);
+		}
+	});
+	$("#kol").change(function(){
+		if ($(this).val()>5){$(this).val(5)}
+		if ($(this).val()<2){$(this).val(2)}
+		$('#slider').slider('value',$(this).val());
+	});
+	$("#data").datepicker({
+		minDate: 1
+	});
+	$("#data").datepicker($.datepicker.regional["ru"]);
+	
+	
+	$("#search").focusin(function(){
+		$( "#search" ).autocomplete({
+			source: availableTags, minLength: 3
+		});
+	});
+
+	$(".SecondForm div a").tooltip();
+	$('#send').click(function(){
+		// Проверка введенных данных
+		let ok = true;
+		if ($("#init").val().length<2){ok = false;$("#init").effect( "shake",{distance:7, times:1},200);}
+		if ($("#kol").val().length<1 || $("#kol").val()=="0"){ok = false;$("#kol").effect( "shake",{distance:7, times:1},200);}
+		if ($("#data").val().length<10){ok = false;$("#data").effect( "shake",{distance:7, times:1},200);}
+		if ($("#search").val().length<5){ok = false;$("#search").effect( "shake",{distance:7, times:1},200);}
+		if (ok){$('#confirm').dialog('open');}
+	});
+	function clear(){
+		$("input:not(.bt, #send)").val('');
+		$("#kol").val('2');
+		$('#slider').slider('value',2);
+	}
+});
+</script>
+</html>
